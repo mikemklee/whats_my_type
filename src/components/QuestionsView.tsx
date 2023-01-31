@@ -63,7 +63,7 @@ export const QuestionsView = ({ onShowResults }: Props) => {
       <div className="mb-4">{questions[currentIndex].question}</div>
 
       <div className="grid grid-cols-1 gap-4">
-        {questions[currentIndex].answers.map((answer, index) => {
+        {questions[currentIndex].answers.map((answer: any, index: number) => {
           return (
             <button
               className="w-80 h-40 bg-slate-100"
