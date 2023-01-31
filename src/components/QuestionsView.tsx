@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import questionsJSON from "../constants/questions.json";
 
@@ -7,11 +7,17 @@ type Props = {
 };
 
 export const QuestionsView = ({ onShowResults }: Props) => {
-  const questions = useMemo(() => questionsJSON, []);
+  const [questions, setQuestions] = useState<any[]>([]);
   const [answers, setAnswers] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const currentQuestion = questions[currentIndex];
+  useEffect(() => {
+    const shuffled = questionsJSON
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+    setQuestions(shuffled);
+  }, [setQuestions]);
 
   const determineType = () => {
     interface Count {
@@ -51,13 +57,13 @@ export const QuestionsView = ({ onShowResults }: Props) => {
     }
   };
 
-  return (
+  return questions.length > 0 ? (
     <div className="text-lg">
       <div className="mb-2">Q. {currentIndex + 1}</div>
-      <div className="mb-4">{currentQuestion.question}</div>
+      <div className="mb-4">{questions[currentIndex].question}</div>
 
       <div className="grid grid-cols-1 gap-4">
-        {currentQuestion.answers.map((answer, index) => {
+        {questions[currentIndex].answers.map((answer, index) => {
           return (
             <button
               className="w-80 h-40 bg-slate-100"
@@ -70,5 +76,5 @@ export const QuestionsView = ({ onShowResults }: Props) => {
         })}
       </div>
     </div>
-  );
+  ) : null;
 };
