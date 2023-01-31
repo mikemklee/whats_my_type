@@ -1,166 +1,170 @@
-{
-  "EI": [
-    {
-      "question": "당신은 E 또는 I 중 어떤 사람인가요? - 1",
-      "answers": [
-        {
-          "description": "E",
-          "value": "E"
-        },
-        {
-          "description": "I",
-          "value": "I"
-        }
-      ]
-    },
-    {
-      "question": "당신은 E 또는 I 중 어떤 사람인가요? - 2",
-      "answers": [
-        {
-          "description": "E",
-          "value": "E"
-        },
-        {
-          "description": "I",
-          "value": "I"
-        }
-      ]
-    },
-    {
-      "question": "당신은 E 또는 I 중 어떤 사람인가요? - 3",
-      "answers": [
-        {
-          "description": "E",
-          "value": "E"
-        },
-        {
-          "description": "I",
-          "value": "I"
-        }
-      ]
-    }
-  ],
-  "SN": [
-    {
-      "question": "당신은 S 또는 N 중 어떤 사람인가요? - 1",
-      "answers": [
-        {
-          "description": "S",
-          "value": "S"
-        },
-        {
-          "description": "N",
-          "value": "N"
-        }
-      ]
-    },
-    {
-      "question": "당신은 S 또는 N 중 어떤 사람인가요? - 2",
-      "answers": [
-        {
-          "description": "S",
-          "value": "S"
-        },
-        {
-          "description": "N",
-          "value": "N"
-        }
-      ]
-    },
-    {
-      "question": "당신은 S 또는 N 중 어떤 사람인가요? - 3",
-      "answers": [
-        {
-          "description": "S",
-          "value": "S"
-        },
-        {
-          "description": "N",
-          "value": "N"
-        }
-      ]
-    }
-  ],
-  "TF": [
-    {
-      "question": "당신은 T 또는 F 중 어떤 사람인가요? - 1",
-      "answers": [
-        {
-          "description": "T",
-          "value": "T"
-        },
-        {
-          "description": "F",
-          "value": "F"
-        }
-      ]
-    },
-    {
-      "question": "당신은 T 또는 F 중 어떤 사람인가요? - 2",
-      "answers": [
-        {
-          "description": "T",
-          "value": "T"
-        },
-        {
-          "description": "F",
-          "value": "F"
-        }
-      ]
-    },
-    {
-      "question": "당신은 T 또는 F 중 어떤 사람인가요? - 3",
-      "answers": [
-        {
-          "description": "T",
-          "value": "T"
-        },
-        {
-          "description": "F",
-          "value": "F"
-        }
-      ]
-    }
-  ],
-  "JP": [
-    {
-      "question": "당신은 J 또는 P 중 어떤 사람인가요? - 1",
-      "answers": [
-        {
-          "description": "J",
-          "value": "J"
-        },
-        {
-          "description": "P",
-          "value": "P"
-        }
-      ]
-    },
-    {
-      "question": "당신은 J 또는 P 중 어떤 사람인가요? - 2",
-      "answers": [
-        {
-          "description": "J",
-          "value": "J"
-        },
-        {
-          "description": "P",
-          "value": "P"
-        }
-      ]
-    },
-    {
-      "question": "당신은 J 또는 P 중 어떤 사람인가요? - 3",
-      "answers": [
-        {
-          "description": "J",
-          "value": "J"
-        },
-        {
-          "description": "P",
-          "value": "P"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "type": "EI",
+    "question": "당신은 E 또는 I 중 어떤 사람인가요? - 1",
+    "answers": [
+      {
+        "description": "E",
+        "value": "E"
+      },
+      {
+        "description": "I",
+        "value": "I"
+      }
+    ]
+  },
+  {
+    "type": "EI",
+    "question": "당신은 E 또는 I 중 어떤 사람인가요? - 2",
+    "answers": [
+      {
+        "description": "E",
+        "value": "E"
+      },
+      {
+        "description": "I",
+        "value": "I"
+      }
+    ]
+  },
+  {
+    "type": "EI",
+    "question": "당신은 E 또는 I 중 어떤 사람인가요? - 3",
+    "answers": [
+      {
+        "description": "E",
+        "value": "E"
+      },
+      {
+        "description": "I",
+        "value": "I"
+      }
+    ]
+  },
+  {
+    "type": "SN",
+    "question": "당신은 S 또는 N 중 어떤 사람인가요? - 1",
+    "answers": [
+      {
+        "description": "S",
+        "value": "S"
+      },
+      {
+        "description": "N",
+        "value": "N"
+      }
+    ]
+  },
+  {
+    "type": "SN",
+    "question": "당신은 S 또는 N 중 어떤 사람인가요? - 2",
+    "answers": [
+      {
+        "description": "S",
+        "value": "S"
+      },
+      {
+        "description": "N",
+        "value": "N"
+      }
+    ]
+  },
+  {
+    "type": "SN",
+    "question": "당신은 S 또는 N 중 어떤 사람인가요? - 3",
+    "answers": [
+      {
+        "description": "S",
+        "value": "S"
+      },
+      {
+        "description": "N",
+        "value": "N"
+      }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "당신은 T 또는 F 중 어떤 사람인가요? - 1",
+    "answers": [
+      {
+        "description": "T",
+        "value": "T"
+      },
+      {
+        "description": "F",
+        "value": "F"
+      }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "당신은 T 또는 F 중 어떤 사람인가요? - 2",
+    "answers": [
+      {
+        "description": "T",
+        "value": "T"
+      },
+      {
+        "description": "F",
+        "value": "F"
+      }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "당신은 T 또는 F 중 어떤 사람인가요? - 3",
+    "answers": [
+      {
+        "description": "T",
+        "value": "T"
+      },
+      {
+        "description": "F",
+        "value": "F"
+      }
+    ]
+  },
+  {
+    "type": "JP",
+    "question": "당신은 J 또는 P 중 어떤 사람인가요? - 1",
+    "answers": [
+      {
+        "description": "J",
+        "value": "J"
+      },
+      {
+        "description": "P",
+        "value": "P"
+      }
+    ]
+  },
+  {
+    "type": "JP",
+    "question": "당신은 J 또는 P 중 어떤 사람인가요? - 2",
+    "answers": [
+      {
+        "description": "J",
+        "value": "J"
+      },
+      {
+        "description": "P",
+        "value": "P"
+      }
+    ]
+  },
+  {
+    "type": "JP",
+    "question": "당신은 J 또는 P 중 어떤 사람인가요? - 3",
+    "answers": [
+      {
+        "description": "J",
+        "value": "J"
+      },
+      {
+        "description": "P",
+        "value": "P"
+      }
+    ]
+  }
+]
