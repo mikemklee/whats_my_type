@@ -11,9 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [currentView, setCurrentView] = useState("questions");
   const [type, setType] = useState("");
-  const onChangeView = (type: string) => {
+
+  const onShowResults = (type: string) => {
     setCurrentView("results");
     setType(type);
+  };
+
+  const onRestart = () => {
+    setCurrentView("questions");
+    setType("");
   };
 
   return (
@@ -26,9 +32,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         {currentView === "questions" ? (
-          <QuestionsView onChangeView={onChangeView} />
+          <QuestionsView onShowResults={onShowResults} />
         ) : (
-          <ResultsView type={type} />
+          <ResultsView type={type} onRestart={onRestart} />
         )}
       </main>
     </>

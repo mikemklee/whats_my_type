@@ -3,10 +3,10 @@ import React, { useMemo, useState } from "react";
 import questionsJSON from "../constants/questions.json";
 
 type Props = {
-  onChangeView: Function;
+  onShowResults: Function;
 };
 
-export const QuestionsView = ({ onChangeView }: Props) => {
+export const QuestionsView = ({ onShowResults }: Props) => {
   const questions = useMemo(() => questionsJSON, []);
   const [answers, setAnswers] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,7 +18,16 @@ export const QuestionsView = ({ onChangeView }: Props) => {
       [key: string]: number;
     }
 
-    const count: Count = {};
+    const count: Count = {
+      E: 0,
+      I: 0,
+      S: 0,
+      N: 0,
+      T: 0,
+      F: 0,
+      J: 0,
+      P: 0,
+    };
     answers.forEach((val) => (count[val] = (count[val] || 0) + 1));
 
     let type = "";
@@ -33,7 +42,9 @@ export const QuestionsView = ({ onChangeView }: Props) => {
   const onClickAnswer = (value: string) => {
     if (currentIndex === questions.length - 1) {
       const type = determineType();
-      onChangeView(type);
+      onShowResults(type);
+      setAnswers([]);
+      setCurrentIndex(0);
     } else {
       setAnswers([...answers, value]);
       setCurrentIndex(currentIndex + 1);
